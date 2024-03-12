@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+                See README(https://goo.gl/l4GJaQ) for more. -->
+<!--    <meta-data-->
+<!--        android:name="com.google.firebase.messaging.default_notification_icon"-->
+<!--        android:resource="@drawable/notification_icon" />-->
+<!--    &lt;!&ndash; Set color used with incoming notification messages. This is used when no color is set for the incoming-->
+<!--                notification message. See README(https://goo.gl/6BKBk7) for more. &ndash;&gt;-->
+<!--    <meta-data-->
+<!--        android:name="com.google.firebase.messaging.default_notification_color"-->
+<!--        android:resource="@color/colorAccent" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        tools:targetApi="28"
+        android:requestLegacyExternalStorage="true"
+        android:hardwareAccelerated="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:exported="false" />
+    </application>
+</manifest>
