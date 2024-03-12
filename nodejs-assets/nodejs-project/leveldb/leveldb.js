@@ -15,7 +15,7 @@ class LevelDB {
             return new LevelDB()
         }
         EventEmitter.call(this)
-        var dbPath = path.resolve(path.join(__dirname, './../leveldb'))
+        var dbPath = path.resolve(path.join(__dirname, './../../leveldb'))
         this.db = LevelUP(Encoding(LevelDOWN(dbPath), { valueEncoding: 'json' }))
     }
 
