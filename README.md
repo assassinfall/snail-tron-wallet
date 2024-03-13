@@ -4,19 +4,19 @@
 </p>
 <p align="center">
 
-蜗牛是由ReactNative开发的波场冷钱包,使用tronwebsdk实现钱包的创建,转帐等功能.
+蜗牛是由ReactNative开发的波场冷钱包,使用tronweb sdk实现钱包的创建,转帐等功能.
 
 ## 主要功能
 
---钱包创建,助记词导入,私钥导入,备份
---TRX转帐,USDT转帐
---TRX,USDT收款二维码
+-钱包创建,助记词导入,私钥导入,备份
+-TRX转帐,USDT转帐
+-TRX,USDT收款二维码
 
 ## 技术栈
 ```
-ReactNative
-NodeJS
-LevelDB
+- ReactNative
+- NodeJS
+- LevelDB
 
 ```
 
